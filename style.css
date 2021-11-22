@@ -11,6 +11,10 @@ body {
   font-family: "roboto", sans-serif;
 }
 
+main {
+  padding: 0 1rem;
+}
+
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
@@ -19,17 +23,16 @@ header {
   position: relative;
 }
 
-main .ville {
+.ville {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.4rem;
-  background-color: #f3f3f3;
+  background-color: #f6f6f6;
   text-align: center;
   padding: 0.5rem;
 }
-
-main .ville i {
+.ville i {
   font-size: 1.5rem;
 }
 
@@ -37,16 +40,13 @@ main .ville i {
 .explorer {
   text-align: center;
 }
-
 .explorer h2 {
   margin-top: 2rem;
   font-size: 2rem;
 }
-
 .explorer p {
   font-size: 1rem;
 }
-
 .explorer button {
   color: white;
   font-weight: bold;
@@ -54,15 +54,58 @@ main .ville i {
   padding: 1rem 2rem;
   border: none;
   border-radius: 2rem;
-  box-shadow: 2px 1px 16px 3px grey;
+  box-shadow: 0px 3px 3px 1px #c7c6c6;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   transition: transform 150ms;
   margin-top: 1rem;
 }
-
 .explorer button:hover {
   transform: scale(1.02);
   opacity: 0.9;
+}
+
+.choix {
+  counter-reset: etapes;
+}
+.choix ol {
+  display: flex;
+  gap: 2rem;
+}
+@media (max-width: 800px) {
+  .choix ol {
+    flex-direction: column;
+  }
+}
+.choix li {
+  position: relative;
+  list-style-type: none;
+  background-color: #f6f6f6;
+  padding: 1.5rem 2rem;
+  flex-grow: 1;
+  border-radius: 1rem;
+  box-shadow: 0px 3px 3px 1px #c7c6c6;
+}
+.choix li::before {
+  content: "" counter(etapes);
+  counter-increment: etapes;
+  color: white;
+  background-color: #9356dc;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 1rem;
+  left: -1rem;
+}
+.choix li:hover {
+  transform: scale(1.02);
+}
+.choix li i.fas {
+  margin-right: 1rem;
+  color: #7e7e7e;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,50 @@
+@import"../utils/hover.scss";
+@import"../utils/colors.scss";
+
+.choix {
+    counter-reset: etapes;
+    & ol {
+        display:flex;
+        gap: 2rem;
+        @media (max-width:1000px) {
+         flex-direction:column;   
+        }
+        
+    }
+    & li {
+        position: relative;
+        &::before {
+            content: "" counter(etapes);
+            counter-increment: etapes;
+            color: white;
+           background-color: $purple;
+          width: 2rem;
+          height: 2rem;
+            display: grid;
+          place-items: center;
+           border-radius: 50%; 
+           position: absolute;
+          bottom: 1rem;
+          left: -1rem;
+
+        }
+        list-style-type: none;
+        background-color: $grey;
+        padding: 1.5rem 2rem;
+        flex-grow: 1;
+        border-radius: 1rem;
+        @include box-shadow-primary;
+        &:hover {
+            @include hover;
+        }
+        & i.fas {
+            margin-right: 1rem;
+            color: $light-grey;
+            font-size: 1.5rem;
+        }
+        
+
+    }
+    
+
+}
