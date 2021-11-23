@@ -15,6 +15,11 @@ main {
   padding: 0 7rem;
 }
 
+h2 {
+  padding: 2rem 0;
+  margin: 0;
+}
+
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
@@ -41,7 +46,6 @@ header {
   text-align: center;
 }
 .explorer h2 {
-  margin-top: 2rem;
   font-size: 2rem;
 }
 .explorer p {
@@ -113,19 +117,48 @@ header {
 .menus {
   background-color: #f6f6f6;
 }
-.menus h2 {
-  margin-bottom: 2rem;
-}
 .menus .menus__cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
 }
-.menus .card {
-  border: 1px solid black;
-  height: 4rem;
-  flex-grow: 1;
-  min-width: 30rem;
+@media (max-width: 1000px) {
+  .menus .menus__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.menus .menus__cards .new {
+  position: relative;
+}
+.menus .menus__cards .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 2rem;
+  width: 5rem;
+  background-color: #99e2d0;
+  color: #1b6150;
+  display: grid;
+  place-items: center;
+  right: 1rem;
+  top: 1rem;
+  border-radius: 0.1rem;
+}
+.menus .card .card__image {
+  border-radius: 1.5rem;
+  height: 15rem;
+  background-size: cover;
+}
+.menus .card__image-1 {
+  background-image: url("../assets/menu-1.jpg");
+}
+.menus .card__image-2 {
+  background-image: url("../assets/menu-2.jpg");
+}
+.menus .card__image-3 {
+  background-image: url("../assets/menu-3.jpg");
+}
+.menus .card__image-4 {
+  background-image: url("../assets/menu-4.jpg");
 }
 
 /*# sourceMappingURL=style.css.map */
