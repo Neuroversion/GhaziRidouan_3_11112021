@@ -1,5 +1,6 @@
 .menus {
   background-color: #f6f6f6;
+  margin-bottom: 2rem;
 }
 .menus .menus__cards {
   display: grid;
@@ -12,17 +13,23 @@
   }
 }
 .menus .menus__cards .new {
-  border: 1px solid red;
+  position: relative;
 }
 .menus .menus__cards .new::before {
-  content: "nouveau";
+  content: "Nouveau";
   position: absolute;
   height: 2rem;
-  width: 2rem;
-  background-color: colo;
+  width: 5rem;
+  background-color: #99e2d0;
+  color: #1b6150;
+  display: grid;
+  place-items: center;
+  right: 1rem;
+  top: 1rem;
+  border-radius: 0.1rem;
 }
-.menus .card .card__image {
-  border-radius: 1.5rem;
+.menus .card__image {
+  border-radius: 1.5rem 1.5rem 0 0;
   height: 15rem;
   background-size: cover;
 }
@@ -37,4 +44,19 @@
 }
 .menus .card__image-4 {
   background-image: url("../assets/menu-4.jpg");
+}
+.menus .card__description {
+  position: relative;
+  background-color: white;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+.menus .card__description h3, .menus .card__description p {
+  padding: 0.3rem;
+}
+.menus .card__description i {
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
 }/*# sourceMappingURL=menus.css.map */
