@@ -59,4 +59,17 @@
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
+}
+.menus .card__description .fas {
+  color: transparent;
+  background-image: linear-gradient(red, blue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
+}
+.menus .card__description:hover .fas {
+  opacity: 1;
+  transform: translateY(-50%) scale(1, 2, 2);
 }/*# sourceMappingURL=menus.css.map */

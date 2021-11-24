@@ -1,6 +1,7 @@
 /*EXPLORER NOS RESTAURANTS*/
 
 @import"../utils/box-shadows.scss";
+@import "../utils/colors.scss";
 .explorer {
     text-align: center;
     
@@ -18,7 +19,7 @@
         border: none;
         border-radius: 2rem;
        @include box-shadow-primary;
-        background-image: linear-gradient(to top, rgba(147, 86, 220,0.9), rgba(255, 121, 218, 0.9));
+       @include gradient (0.9);  
         transition: transform 150ms;
         margin-top: 1rem;
     }

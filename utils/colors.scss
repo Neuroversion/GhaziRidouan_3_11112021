@@ -3,3 +3,6 @@ $purple: #9356dc;
 $grey: #f6f6f6;
 $color-tertiary: #99e2d0;
 $darkgrey: #353535;
+@mixin gradient($opacity: 0.9) {
+    background-image: linear-gradient(to top, rgba(147, 86, 220,$opacity), rgba(255, 121, 218, $opacity));
+}
