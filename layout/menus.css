@@ -60,42 +60,16 @@
 }
 
 .menus .card__description {
-  position: relative;
-  background-color: white;
-  height: 4.5rem;
-  border-radius: 0 0 1.5rem 1.5rem;
-  padding-bottom: 5rem;
+  @i @include gradient(1);
 }
 
-.menus .card__description h3, .menus .card__description p {
-  padding: 0.3rem;
-}
-
-.menus .card__description i {
-  font-size: 2rem;
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.menus .card__description .fas {
-  color: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(blue));
-  background-image: linear-gradient(red, blue);
-  background-clip: text;
-  -webkit-background-clip: text;
-  opacity: 0;
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
-  background-image: linear-gradient(to top, #9356dc, #ff79da);
-}
-
-.menus .card__description:hover .fas {
+.menus .card:hover .fas {
   opacity: 1;
   -webkit-transform: translateY(-50%) scale(1, 2, 2);
           transform: translateY(-50%) scale(1, 2, 2);
+}
+
+.menus .card h3, .menus .card p {
+  padding: 0.3rem;
 }
 /*# sourceMappingURL=menus.css.map */
