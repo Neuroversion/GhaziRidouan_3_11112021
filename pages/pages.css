@@ -1,8 +1,99 @@
-img {
-  max-width: 100%;
+header i {
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .fas {
+  color: transparent;
+  background-image: linear-gradient(red, blue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
+}
+header:hover .fas {
+  opacity: 1;
+  transform: translateY(-50%) scale(1, 2, 2);
 }
 
-main h2 {
-  font-family: "Shrikhand", "sans-serif";
+body {
+  background-color: #f6f6f6;
 }
-/*# sourceMappingURL=pages.css.map */
+
+#page-resto .banniere img {
+  display: block;
+  max-width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center bottom;
+     object-position: center bottom;
+}
+#page-resto .resto__title {
+  margin-top: -2rem;
+}
+#page-resto .resto__title h2 {
+  font-family: "Shrikhand", "cursive";
+  padding: 2 rem 1rem;
+  position: relative;
+  border-radius: 2rem 2rem 0 0;
+}
+#page-resto .resto__title .resto-main {
+  padding: 0 1rem;
+}
+#page-resto .resto__title .menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 1000px) {
+  #page-resto .resto__title .menu {
+    grid-template-columns: 1fr;
+  }
+}
+#page-resto .resto__title .menu .menu__category {
+  background-color: white;
+  border-radius: 1rem;
+}
+#page-resto .resto__title .menu .menu__category .menu-item {
+  display: flex;
+  overflow: hidden;
+}
+#page-resto .resto__title .menu .menu__category .menu-item .menu-item__prix {
+  margin-left: auto;
+  font-weight: 900;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-end;
+}
+#page-resto .resto__title .menu .menu__category .menu-item .menu-item__description {
+  padding: 1rem;
+}
+#page-resto .resto__title .menu .menu__category .menu-item .menu-item__check {
+  display: grid;
+  place-items: center;
+  border-radius: 0 1rem 1rem 0;
+  background-color: #99e2d0;
+  margin-right: -4rem;
+  width: 4rem;
+  transition: margin-right 0.5s;
+}
+#page-resto .resto__title .menu .menu__category .menu-item i {
+  display: grid;
+  place-items: center;
+  background: white;
+  aspect-ratio: 1;
+  width: 2rem;
+  border-radius: 1rem;
+  color: #99e2d0;
+}
+#page-resto .resto__title .menu .menu__category .menu-item:hover .menu-item__check {
+  margin-right: 0;
+}
+#page-resto .resto__title .menu .menu__category .menu-item:hover i {
+  -webkit-animation: quarterspin 0.5s ease-in-out;
+          animation: quarterspin 0.5s ease-in-out;
+}/*# sourceMappingURL=pages.css.map */
