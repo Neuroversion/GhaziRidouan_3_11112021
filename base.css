@@ -3,17 +3,19 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   margin: 0px;
-  font-family: "roboto", sans-serif;
+  font-family: "roboto",sans-serif;
 }
 
 main {
   padding: 0 7rem;
 }
+
 @media (max-width: 1000px) {
   main {
     padding: 0 1rem;
@@ -28,4 +30,5 @@ p, h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none;
   color: inherit;
-}/*# sourceMappingURL=base.css.map */
+}
+/*# sourceMappingURL=base.css.map */

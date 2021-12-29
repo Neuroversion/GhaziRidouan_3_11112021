@@ -41,12 +41,15 @@ body {
     object-position: center bottom;
 }
 .resto__title {
- margin-top: -2rem;
-    h2{
+ margin-top: 1rem;
+    h2 {
     font-family: "Shrikhand", "cursive";
-    padding: 2 rem 1rem;
+    padding: 4 rem 1rem;
     position: relative;
     border-radius: 2rem 2rem 0 0;
+    .description {
+        @include mixin.heart;
+    }
 }
 .resto-main {
     padding: 0 1rem;  
