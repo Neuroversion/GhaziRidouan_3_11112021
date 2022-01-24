@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: "roboto"; 
-    src: url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+    src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
 
 }
 body {
@@ -10,11 +10,10 @@ body {
     font-family: "roboto";
    text-align: center;
     background-color: white;
-    margin: 0;
+    -margin: 0;
 }
 h2 {
-    font-family: 'roboto', Shrikhand;
-    
+    font-family: "Shrikhand";
 }
 .grosTitre {
     padding-top: 1rem;
@@ -31,7 +30,6 @@ h2 {
    text-align: center;
     align-items: center;
     background-color: lightgray; 
-    justify-content: center;
  gap: 1rem;
 }
 
@@ -72,7 +70,7 @@ h2 {
     font-weight: normal;
     align-items: center;
     width: 70%;
-    margin: 1.6rem;
+    margin: 2.5rem;
     display: flex;
     justify-content: space-around;
     margin-bottom: 2rem;
@@ -114,89 +112,27 @@ margin-left: -55px;
         border-radius: 100px;
     
 }
-
-.restaurants {
-   padding-top: 15%;
-    background-color: #f1f1f0;
-    padding-bottom: 3rem;
-}
-.titreResto {
-    margin-left: -11rem;
-}
-.card {
-    width: 40%;
-   
-    border-radius: 0px 0px 20px 20px; 
-   
-}
-
-.card > a {
+.img1,.img3,.img4 {
     width: 100%;
-    height: 100%;
-    display: block;
-    text-decoration: none;
-    
-  
-
+    height: auto;
 }
-
-.card__image > img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 1.6rem;
-    width: 20rem;
-    border-radius: 20px 20px 0px 0px;
-    box-shadow: 2px 2px 10px 0px rgba(252, 188, 188, 0.5);
-}
-
-.card__description {
-   
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-   width: 20rem;
-   margin-left: 1.6rem;
-margin-top: -5px;
-margin-bottom: 3rem;
-    border-radius: 0 0 20px 20px;
-    line-height: 0%;
-    color: #000000;
-    background-color: white;
-    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
-}
-
-.coeur > .far
-.coeur:hover > .far {
-  display: none;
-}
-.coeur:hover > .fas {
-  display: inherit;
-}
-h3, p {
-    margin-left: 0px;
-}
-
 .img2 {
-    width: 90%;
+    width: 100%;
    height: 16rem;
-   border-radius: 20px 20px 0 0;
 }
-
-
 .footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+   margin-top: 4rem;
    margin-bottom: -1rem;
    padding-bottom: 2em;
    padding-top: 1rem;
 padding-left: 2rem;
-line-height: 0px;
+margin-left: -1rem;
     background-color: #363535;
     color: white;
 }
-
 .contact {
   
     text-decoration: none;
