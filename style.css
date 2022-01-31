@@ -72,7 +72,6 @@ h2 {
 }
 
 .bigBtn {
-  
     font-size: small;
     font-weight: normal;
     align-items: center;
@@ -86,7 +85,6 @@ h2 {
     color: #0a0a0a;
     border-radius: 25px;
     box-shadow: 4px 4px 8px 2px rgba(0,0,0,0.1);
-    
     }
     .bigBtn:hover {
     background: #fae7f5;
@@ -96,7 +94,7 @@ h2 {
     color: #000000;
 }
 .choix {
-    margin-top: 3rem;
+   margin-top: 3rem;
    background-color: white;
    width: 100%;
    height: 20rem;
@@ -140,22 +138,10 @@ margin-left: -55px;
 }
 .card {
     width: 80%;
-   
-    border-radius: 0px 0px 20px 20px; 
-   
+    border-radius: 0px 0px 20px 20px;  
 }
-
 .card > a {
-    width: 100%;
-    height: 100%;
-    display: flex;
     text-decoration: none;
-    flex-direction: column;
-}
-
-.card__image {
-    height: 75%;
-    width: auto;
 }
 
 .card__image > img {
@@ -163,42 +149,39 @@ margin-left: -55px;
     border-radius: 20px 20px 0px 0px;
     box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
 }
-
 .card__description {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 5rem;
     border-radius: 0 0 20px 20px;
-    vertical-align: middle;
-    width: auto;
-    margin: 0px;
+    margin-top: -0.5rem;
     color: #000000;
     background-color: white;
     box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
-    justify-content: space-between;
+    line-height: 0px;
+ 
 }
-
 .card__description .coeur {
-    width: 20%;
+    margin-left: 15rem;
+    margin-bottom: 2rem;
+  
+}
+.coeur {
+    color: #928888;
+}
+.coeur:hover {
+    color: #9356DC;
 }
 
-.coeur > .far
-.coeur:hover > .far {
-  display: none;
-}
-.coeur:hover > .fas {
-  display: inherit;
-}
 h3, p {
     margin-left: 0px;
 }
-
 .img2 {
     width: 90%;
    height: 16rem;
    border-radius: 20px 20px 0 0;
 }
-
-
 .footer {
     display: flex;
     flex-direction: column;
@@ -218,18 +201,15 @@ line-height: 0px;
     align-items: center;
 }
 .contact {
-  
     text-decoration: none;
     color: white;
-
 }
 
 /*Page la palette du gout*/
 
 .banniere {
     width: 100%;
-    height: 16rem;
-    
+    height: 16rem; 
 }
 .resto__title {
     margin-top: -10%;
