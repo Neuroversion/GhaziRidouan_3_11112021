@@ -1,19 +1,22 @@
 
+@font-face {   
+font-family: "Shrikhand";
+src: url("./assets/font/Shrikhand-Regular.ttf");
+}
 @font-face {
-    font-family: "roboto"; 
-    src: url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-
+    font-family: "roboto";
+    src: url("./assets/font/Roboto-Black.ttf");
 }
 body {
     display: flex;
     flex-direction: column;
-    font-family: "roboto";
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    text-align: center;
     background-color: white;
     margin: 0;
 }
 h2 {
-    font-family: 'roboto', 'Shrikhand';
+    font-family: 'Shrikhand';
     
 }
 .grosTitre {
@@ -72,13 +75,14 @@ h2 {
 }
 
 .bigBtn {
+    display: flex;
+    flex-direction: row;
     font-size: small;
     font-weight: normal;
-    align-items: center;
+    align-items: flex-start;
     width: 70%;
-    margin: 1.6rem;
-    display: flex;
-    justify-content: space-around;
+    -margin: 1.6rem;
+    justify-content: space-between;
     margin-bottom: 2rem;
     padding: 10px 30px;
     background: #f1f1f0;
@@ -164,8 +168,7 @@ margin-left: -55px;
 }
 .card__description .coeur {
     margin-left: 15rem;
-    margin-bottom: 2rem;
-  
+ 
 }
 .coeur {
     color: #928888;
@@ -181,6 +184,12 @@ h3, p {
     width: 90%;
    height: 16rem;
    border-radius: 20px 20px 0 0;
+}
+.menu__category1, .menu__category2, .menu__category3 {
+
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #99E2D0;
 }
 .footer {
     display: flex;
@@ -212,10 +221,26 @@ line-height: 0px;
     height: 16rem; 
 }
 .resto__title {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
     margin-top: -10%;
     background-color: rgb(238, 237, 237);
    border-radius: 40px 40px 0 0;
 }
+.palette {
+    margin-top: 2.5rem;
+    margin-left: 1rem;
+}
+    .coeur2 {
+      margin-top: 2rem;
+      margin-left: 6rem;
+        color: #928888;
+    }
+    .coeur2:hover {
+        color: #9356DC;
+    }
+
 h4 {
     font-size: large;
     font-weight: bold;
@@ -228,6 +253,13 @@ h4 {
 }
 .menu {
     background-color: rgb(238, 237, 237);
+}
+.menu-item__description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
 }
 .button {
     margin-left: 4rem;
