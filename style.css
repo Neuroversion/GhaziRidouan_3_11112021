@@ -279,17 +279,22 @@ h4 {
 }
 .bigBtn2 {
   display: flex;
-  -flex-direction: column;
+  flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ align-content: space-evenly;
+
+  width: 90%;
+  height: 3rem;
   font-size: small;
   font-weight: normal;
-  margin-bottom: 2rem;
-  padding: 10px 30px;
+  -margin-bottom: 2rem;
+  -padding: 10px 30px;
   background: #f1f1f0;
   color: #0a0a0a;
   border-radius: 25px;
   box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.1);
-  justify-content: space-between;
-  align-items: flex-start;
+ 
   background-color: white;
   width: 80%;
   height: 4rem;
@@ -302,7 +307,8 @@ h4 {
   background-color: rgb(238, 237, 237);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: space-around;
+  justify-content: space-around;
 }
 .menu-item__description {
   display: flex;
@@ -313,8 +319,8 @@ h4 {
 }
 .menu__category1 .menu__category2 .menu__category3 {
   -flex: none;
-  display: flex;
-  justify-self: unset;
+  -display: flex;
+  -justify-self: unset;
   -text-align: unset;
   padding-left: 1rem;
   margin-left: 1rem;
