@@ -178,7 +178,6 @@ position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
-  -align-items: flex-start;
   justify-content: space-around;
  text-align: 1rem;
   height: 25%;
@@ -226,7 +225,6 @@ p {
   flex-direction: column;
   -align-items: flex-start;
   justify-content: space-between;
-  -margin-bottom: -1rem;
   padding-bottom: 2em;
   padding-top: 1rem;
   padding-left: 2rem;
@@ -286,16 +284,15 @@ h4 {
   font-size: small;
   font-weight: normal;
   margin-bottom: 2rem;
-  padding: 10px 30px;
+  padding: 0px 0px 0px 20px;
   background: #f1f1f0;
   color: #0a0a0a;
   border-radius: 25px;
   box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.1);
   justify-content: space-between;
-  align-items: flex-start;
   background-color: white;
   width: 80%;
-  height: 4rem;
+  overflow: hidden;
 }
 .menu {
   background-color: rgb(238, 237, 237);
@@ -308,22 +305,43 @@ h4 {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  height: 1rem;
+  padding: 10px 0px;
 }
 .menu__category1 .menu__category2 .menu__category3 {
   -flex: none;
-  display: flex;
- justify-self: unset;
+  -display: flex;
+ -justify-self: unset;
   -text-align: unset;
-  padding-left: 1rem;
-  margin-left: 1rem;
+  -padding-left: 1rem;
+  -margin-left: 1rem;
+  margin-left: 3%;
 }
 .menu-item__prix {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  font-weight: bold;
+  align-self: center;
+  font-weight: bold; 
+}
+.menu-item__prix:hover {
+  
+}
+
+.checkbox {
+  background-color: #99E2D0;
+  color: white;
+  padding: 10px 35px;
+  border-radius: 0px 15px 15px 0px;
+  transform: translateX(72px);
+  transition: transform 0.6s;
+  transition-timing-function: ease-in-out;
+
+}
+
+.bigBtn2:hover .checkbox {
+  transform: translateX(0px);
+}
+
+
+.checkbox i {
+  color: white;
 }
 .ligne {
   margin-left: 3%;
